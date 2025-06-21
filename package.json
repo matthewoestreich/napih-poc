@@ -22,6 +22,7 @@
 		"index.d.ts"
 	],
 	"scripts": {
+		"install": "echo \"[DELIBERATE] npm install NOOP\"",
     "prebuildify": "prebuildify --napi",
 		"configure": "node-gyp configure",
 		"build": "node-gyp build",
