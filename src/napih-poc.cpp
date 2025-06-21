@@ -32,3 +32,9 @@ GreeterWrapper::GreeterWrapper(const Napi::CallbackInfo &info)
 Napi::Value GreeterWrapper::greet(const Napi::CallbackInfo &info) {
   return Napi::String::New(info.Env(), GreeterInstance->greet());
 }
+
+Napi::Object InitAll(Napi::Env env, Napi::Object exports) {
+  return GreeterWrapper::Init(env, exports);
+}
+
+NODE_API_MODULE(NODE_GYP_MODULE_NAME, InitAll)
