@@ -1,7 +1,7 @@
 #include "Greeter.hpp"
 
 Greeter::Greeter(const std::string &thingToGreet)
-  : greetTarget(thingToGreet) {
+    : greetTarget(thingToGreet) {
 }
 
 std::string Greeter::greet() {
