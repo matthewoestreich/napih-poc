@@ -22,7 +22,7 @@
 		"index.d.ts"
 	],
 	"scripts": {
-    "prebuild": "prebuildify --napi",
+    "prebuildify": "prebuildify --napi",
 		"configure": "node-gyp configure",
 		"build": "node-gyp build",
 		"build:bear": "bear --output build/compile_commands.json -- node-gyp configure build",
